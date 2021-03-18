@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
-
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 archivesBaseName = 'templ4docx'
 version = System.getenv("BUILD_NUMBER") ?: "3.0.0-Beta"
 
@@ -9,8 +10,7 @@ repositories {
 }
 
 dependencies {
-    compile 'pl.jsolve:sweetener:+'
-    compile 'org.apache.poi:poi:+'
+    //compile 'pl.jsolve:sweetener:+'
     compile 'org.apache.poi:poi-ooxml:+'
     compile 'org.apache.commons:commons-lang3:+'
 
